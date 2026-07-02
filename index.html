@@ -1,131 +1,652 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OFICINA ENGETRONIC</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="1969-dodge-charger-bullitt-removebg-preview.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- ============================= SEO PRIMÁRIO ============================= -->
+  <title>Engetronic | Oficina Mecânica de Precisão em Maceió, AL</title>
+  <meta name="description" content="Engetronic — oficina mecânica especializada em motor, suspensão, freios, embreagem, injeção eletrônica e diagnóstico computadorizado em Maceió/AL. Diagnóstico preciso, orçamento transparente e garantia real. Agende pelo WhatsApp.">
+  <meta name="keywords" content="oficina mecânica Maceió, injeção eletrônica, diagnóstico automotivo, troca de embreagem, revisão de freios, suspensão automotiva, mecânica de motor, Engetronic">
+  <meta name="author" content="Engetronic">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://engetronic.vercel.app/">
+  <meta name="theme-color" content="#0a0e14">
+
+  <!-- ============================= OPEN GRAPH ============================= -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Engetronic">
+  <meta property="og:title" content="Engetronic | Oficina Mecânica de Precisão em Maceió, AL">
+  <meta property="og:description" content="Diagnóstico eletrônico de precisão, motor, suspensão, freios e injeção eletrônica. Transparência, garantia e agilidade. Fale agora pelo WhatsApp.">
+  <meta property="og:url" content="https://engetronic.vercel.app/">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- ============================= TWITTER CARDS ============================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Engetronic | Oficina Mecânica de Precisão em Maceió, AL">
+  <meta name="twitter:description" content="Diagnóstico eletrônico de precisão, motor, suspensão, freios e injeção eletrônica. Agende pelo WhatsApp.">
+
+  <!-- ============================= SCHEMA.ORG (JSON-LD) ============================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Engetronic",
+    "image": "",
+    "@id": "https://engetronic.vercel.app/",
+    "url": "https://engetronic.vercel.app/",
+    "telephone": "+5582981402200",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lot. Canto do Mainá, Rua P, Nº 27",
+      "addressLocality": "Maceió",
+      "addressRegion": "AL",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -9.559889,
+      "longitude": -35.7698976
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "12:00"
+      }
+    ],
+    "sameAs": []
+  }
+  </script>
+
+  <!-- ============================= FONTES ============================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ============================= FONT AWESOME ============================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="container">
-        <h3>OFICINA MECANICA</h3>
-        <span class="gradient-text">ENGETRONIC <img src="1969-dodge-charger-bullitt-removebg-preview.png" alt="dodge Charger" style="width: 150px; height: auto; vertical-align: middle;"> </span>
-        <p>PEÇAS E SERVIÇOS</p>
-    </header>
 
-    <!-- Barra de Navegação -->
-    <nav class="button-container">
-        <button class="buttonbarra" id="quem-somos-button">Quem somos</button>
-        <button class="buttonbarra" id="nossa-missao-button">Nossa missão</button>
-        <button class="buttonbarra" id="nosso-objetivo-button">Nosso objetivo</button>
-    </nav>
+  <!-- ============================================================
+       SKIP LINK — Acessibilidade
+  ============================================================= -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/5582981402200" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+  <!-- ============================================================
+       NAVBAR
+  ============================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand" aria-label="Engetronic — página inicial">
+        <span class="navbar__mark" aria-hidden="true">
+          <i class="fa-solid fa-bolt"></i>
+        </span>
+        <span class="navbar__name">ENGETRONIC</span>
+      </a>
 
-    <div class="lado-a-lado">
-        <!-- Especialidades -->
-        <section class="conteudo1">
-            <h2><i class="fas fa-wrench"></i> ESPECIALIDADES</h2>
-            <ul>
-                <li>EMBREAGEM</li> 
-                <li>FREIOS</li> 
-                <li>SUSPENSÃO</li>
-                <li>INJEÇÃO ELETRÔNICA</li>
-                <li>MOTOR</li>
-            </ul>
-        </section>
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegação principal">
+        <a href="#servicos" class="navbar__link">Serviços</a>
+        <a href="#diferenciais" class="navbar__link">Diferenciais</a>
+        <a href="#processo" class="navbar__link">Processo</a>
+        <a href="#depoimentos" class="navbar__link">Depoimentos</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+        <a href="#contato" class="navbar__link">Contato</a>
+      </nav>
 
-        <!-- Depoimentos e Dicas Automotivas -->
-        <section class="conteudo1">
-            <h2><i class="fas fa-comments"></i> O que nossos clientes dizem</h2>
-            <div class="depoimento-item">
-                <p>"Serviço excelente! Rápido e confiável. Recomendo para todos."</p>
-                <span>- João Silva</span>
-            </div>
-            <div class="depoimento-item">
-                <p>"Equipe muito atenciosa e peças de alta qualidade!"</p>
-                <span>- Maria Oliveira</span>
-            </div>
-        </section>
-
-        <section class="conteudo1">
-            <h2><i class="fas fa-car"></i> Dicas Automotivas</h2>
-            <div class="dica-item">
-                <h3>Quando trocar o óleo do carro?</h3>
-                <p>Troque o óleo a cada 5.000 a 10.000 km, dependendo do tipo de óleo utilizado.</p>
-            </div>
-            <div class="dica-item">
-                <h3>Cuidados com os freios</h3>
-                <p>Verifique as pastilhas de freio a cada 6 meses e substitua se necessário.</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Seção Quem Somos -->
-    <section id="quem-somos" class="conteudo2">
-        <h2>Quem Somos</h2>
-        <p> Somos uma equipe apaixonada por automóveis, dedicada a oferecer serviços de qualidade e confiança.<br><br>
-            Com anos de experiência no setor, nossa missão é cuidar do seu veículo como se fosse nosso.<br><br>
-            Nosso compromisso é com a transparência, integridade e a satisfação total dos nossos clientes.<br><br>
-            Na ENGETRONIC, acreditamos que cada carro merece atenção especial e cuidados profissionais.<br><br>
-            Unindo tradição e inovação, buscamos sempre as melhores soluções para os desafios automotivos.</p>
-    </section>
-
-    <!-- Seção Nossa Missão -->
-    <section id="nossa-missao" class="conteudo3">
-        <h2>Nossa Missão</h2>
-        <p> Oferecer serviços automotivos de alta qualidade com ética e transparência.<br><br>
-            Comprometemo-nos a proporcionar segurança e confiança em cada veículo que atendemos.<br><br>
-            Buscar a excelência na satisfação dos nossos clientes, garantindo um atendimento personalizado e eficiente.<br><br>
-            Promover a manutenção consciente e responsável, contribuindo para a durabilidade dos veículos e a segurança no trânsito.<br><br>
-            Ser referência em serviços automotivos, sempre priorizando a integridade e a confiança dos nossos clientes.</p>
-    </section>
-
-    <!-- Seção Nosso Objetivo -->
-    <section id="nosso-objetivo" class="conteudo4">
-        <h2>Nosso Objetivo</h2>
-        <p> Atingir a liderança no mercado automotivo local, através da inovação e qualidade nos nossos serviços.<br><br>
-            Fidelizar nossos clientes por meio de um atendimento excepcional e resultados consistentes.<br><br>
-            Educar nossos clientes sobre a importância da manutenção preventiva, promovendo a segurança no trânsito.<br><br>
-            Expandir nossos serviços, sempre mantendo o compromisso com a qualidade e a satisfação do cliente.<br><br>
-            Estabelecer parcerias com fornecedores de renome para garantir as melhores peças e serviços.</p>
-    </section>
-
-    <br><br><br><br><br>
-
-
-    <!-- Marcas -->
-    <section class="marcas">
-        <h1>MARCAS QUE TRABALHAMOS</h1>
-        <div class="marca-logos">
-            <img src="/chevrolet-logo-emblem-png-image-701751694713268nqpyixtxkk-removebg-preview.png" alt="logo da chevrolet">
-            <img src="/honda-autos-logo.png" alt="logo da honda">
-            <img src="/logo_Volkswagen-removebg-preview.png" alt="logo da volkswagen">
-            <img src="/logo-citroen-removebg-preview.png" alt="logo da citroen">
-            <img src="/png-clipart-fiat-automobiles-fiat-500-chrysler-car-fiat-emblem-logo-removebg-preview.png" alt="logo da fiat">
-            <img src="/png-clipart-hyundai-motor-company-car-logo-2019-hyundai-accent-hyundai-emblem-text-removebg-preview.png" alt="logo da hyundai">
-            <img src="/png-transparent-ford-motor-company-car-ford-f-series-ford-mondeo-auto-parts-emblem-logo-car-removebg-preview.png" alt="logo da ford">
-        </div>
-    </section>
-
-    <br><br>
-
-    <!-- Seção de Endereço e Link para Google Maps -->
-    <section class="contato">
-        <h2><i class="fas fa-map-marker-alt"></i> Nosso Endereço</h2>
-        <p>LOT. CANTO DO MAINÁ, RUA P. N°27 - cidade universitária, Maceió - Alagoas</p>
-        <br>
-        <a href="https://www.google.com/maps/@-9.559889,-35.7698976,3a,90y,333.29h,63.9t/data=!3m7!1e1!3m5!1suNpPesB4Cjv2AAD3TctqZw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D26.101916925368243%26panoid%3DuNpPesB4Cjv2AAD3TctqZw%26yaw%3D333.2915883712728!7i13312!8i6656?coh=205410&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link">
-            Ver no Google Maps
+      <div class="navbar__actions">
+        <a href="https://wa.me/5582981402200?text=Ol%C3%A1%2C%20Engetronic!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20para%20meu%20ve%C3%ADculo."
+           class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>Agendar</span>
         </a>
+
+        <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+    ============================================================= -->
+    <section class="hero" id="home">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Diagnóstico eletrônico &amp; mecânica de precisão</p>
+
+          <h1 class="hero__title">
+            Seu carro fala.<br>
+            <span class="hero__title-accent">Nós entendemos<br>cada sinal.</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Motor, suspensão, freios, embreagem e injeção eletrônica reparados com
+            tecnologia de diagnóstico computadorizado. Precisão de engenharia,
+            transparência total e garantia em cada serviço.
+          </p>
+
+          <div class="hero__actions">
+            <a href="https://wa.me/5582981402200?text=Ol%C3%A1%2C%20Engetronic!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20para%20meu%20ve%C3%ADculo."
+               class="btn btn--whatsapp" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span>Falar no WhatsApp agora</span>
+            </a>
+            <a href="#servicos" class="btn btn--ghost">
+              <span>Ver especialidades</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              <span>Garantia em serviços</span>
+            </div>
+            <div class="hero__trust-item">
+              <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+              <span>Diagnóstico computadorizado</span>
+            </div>
+            <div class="hero__trust-item">
+              <i class="fa-solid fa-user-gear" aria-hidden="true"></i>
+              <span>Equipe especializada</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Elemento visual assinatura: HUD de diagnóstico 100% CSS ===== -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="hud">
+            <div class="hud__ring hud__ring--outer"></div>
+            <div class="hud__ring hud__ring--dashed"></div>
+            <div class="hud__ring hud__ring--scan"></div>
+            <div class="hud__ticks"></div>
+
+            <div class="hud__core">
+              <i class="fa-solid fa-bolt"></i>
+              <span class="hud__core-label">SCAN</span>
+            </div>
+
+            <div class="hud__node hud__node--n">
+              <i class="fa-solid fa-gauge"></i>
+              <div class="hud__node-text"><strong>RPM</strong><small>estável</small></div>
+            </div>
+            <div class="hud__node hud__node--e">
+              <i class="fa-solid fa-temperature-half"></i>
+              <div class="hud__node-text"><strong>TEMP</strong><small>normal</small></div>
+            </div>
+            <div class="hud__node hud__node--s">
+              <i class="fa-solid fa-car-battery"></i>
+              <div class="hud__node-text"><strong>VOLT</strong><small>12.6V</small></div>
+            </div>
+            <div class="hud__node hud__node--w">
+              <i class="fa-solid fa-oil-can"></i>
+              <div class="hud__node-text"><strong>ÓLEO</strong><small>ok</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#indicadores" class="hero__scroll" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
     </section>
 
-    <script src="script.js"></script>
+    <!-- ============================================================
+         INDICADORES
+    ============================================================= -->
+    <section class="stats" id="indicadores">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stats__item reveal">
+            <span class="stats__number" data-count="3200" data-suffix="+">0</span>
+            <span class="stats__label">Clientes atendidos</span>
+          </div>
+          <div class="stats__item reveal">
+            <span class="stats__number" data-count="15" data-suffix="+">0</span>
+            <span class="stats__label">Anos de experiência</span>
+          </div>
+          <div class="stats__item reveal">
+            <span class="stats__number" data-count="5400" data-suffix="+">0</span>
+            <span class="stats__label">Veículos reparados</span>
+          </div>
+          <div class="stats__item reveal">
+            <span class="stats__number" data-count="98" data-suffix="%">0</span>
+            <span class="stats__label">Satisfação dos clientes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS
+    ============================================================= -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Especialidades</p>
+          <h2 class="section-title">Cada sistema do seu veículo, tratado com precisão técnica</h2>
+          <p class="section-desc">Da mecânica pesada à eletrônica embarcada — uma equipe, um padrão de qualidade.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon"><i class="fa-solid fa-car-side"></i></div>
+            <h3 class="service-card__title">Motor</h3>
+            <p class="service-card__desc">Retífica, revisão completa e reparo de componentes internos com controle de precisão milimétrica.</p>
+            <span class="service-card__index">01</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon"><i class="fa-solid fa-arrows-up-down"></i></div>
+            <h3 class="service-card__title">Suspensão</h3>
+            <p class="service-card__desc">Amortecedores, molas e geometria ajustados para estabilidade, conforto e segurança na direção.</p>
+            <span class="service-card__index">02</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon"><i class="fa-solid fa-circle-notch"></i></div>
+            <h3 class="service-card__title">Freios</h3>
+            <p class="service-card__desc">Pastilhas, discos e sistema hidráulico revisados com testes de performance e segurança real.</p>
+            <span class="service-card__index">03</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon"><i class="fa-solid fa-gears"></i></div>
+            <h3 class="service-card__title">Embreagem</h3>
+            <p class="service-card__desc">Diagnóstico de desgaste e substituição completa do kit com ajuste fino de acionamento.</p>
+            <span class="service-card__index">04</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3 class="service-card__title">Injeção Eletrônica</h3>
+            <p class="service-card__desc">Calibração, limpeza de bicos e correção de falhas na central eletrônica de injeção.</p>
+            <span class="service-card__index">05</span>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3 class="service-card__title">Diagnóstico</h3>
+            <p class="service-card__desc">Scanner automotivo de última geração para identificar falhas com precisão antes de intervir.</p>
+            <span class="service-card__index">06</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DIFERENCIAIS
+    ============================================================= -->
+    <section class="features" id="diferenciais">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Por que a Engetronic</p>
+          <h2 class="section-title">Padrão de oficina que você sente na primeira visita</h2>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Garantia real</h3>
+            <p>Todo serviço executado sai com garantia por escrito — sem letras miúdas.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Atendimento rápido</h3>
+            <p>Diagnóstico ágil e prazos claros para você não ficar sem o seu veículo.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-user-gear"></i></div>
+            <h3>Equipe especializada</h3>
+            <p>Profissionais treinados em mecânica e eletrônica automotiva moderna.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon"><i class="fa-solid fa-satellite-dish"></i></div>
+            <h3>Equipamentos modernos</h3>
+            <p>Scanners e ferramentas atualizadas para diagnósticos precisos, sem achismo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESSO DE ATENDIMENTO
+    ============================================================= -->
+    <section class="process" id="processo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Como funciona</p>
+          <h2 class="section-title">Do primeiro contato à entrega, sem surpresas</h2>
+        </div>
+
+        <div class="process__timeline">
+          <div class="process__step reveal">
+            <div class="process__marker"><span>01</span></div>
+            <div class="process__body">
+              <h3>Diagnóstico inicial</h3>
+              <p>Escaneamos o veículo e ouvimos o relato do problema para identificar a causa real, não só o sintoma.</p>
+            </div>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__marker"><span>02</span></div>
+            <div class="process__body">
+              <h3>Orçamento transparente</h3>
+              <p>Você recebe o valor detalhado por serviço e peça, antes de qualquer aprovação.</p>
+            </div>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__marker"><span>03</span></div>
+            <div class="process__body">
+              <h3>Execução do serviço</h3>
+              <p>Reparo executado por especialistas, com atualização do status durante o processo.</p>
+            </div>
+          </div>
+          <div class="process__step reveal">
+            <div class="process__marker"><span>04</span></div>
+            <div class="process__body">
+              <h3>Entrega e garantia</h3>
+              <p>Veículo testado, revisado e entregue com garantia formal do serviço realizado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DEPOIMENTOS
+    ============================================================= -->
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Depoimentos</p>
+          <h2 class="section-title">Quem já passou pela Engetronic</h2>
+        </div>
+
+        <div class="testimonial-slider reveal" id="testimonialSlider">
+          <div class="testimonial-slider__track" id="testimonialTrack">
+
+            <blockquote class="testimonial-card">
+              <i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i>
+              <p>"Serviço excelente! Rápido e confiável. Recomendo para todos que querem um trabalho bem feito."</p>
+              <footer>
+                <div class="testimonial-card__avatar" aria-hidden="true">JS</div>
+                <div>
+                  <cite>João Silva</cite>
+                  <span>Cliente Engetronic</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i>
+              <p>"Equipe muito atenciosa e peças de alta qualidade! Finalmente encontrei uma oficina de confiança."</p>
+              <footer>
+                <div class="testimonial-card__avatar" aria-hidden="true">MO</div>
+                <div>
+                  <cite>Maria Oliveira</cite>
+                  <span>Cliente Engetronic</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i>
+              <p>"O diagnóstico eletrônico identificou um problema que outras oficinas não conseguiram achar. Impressionante."</p>
+              <footer>
+                <div class="testimonial-card__avatar" aria-hidden="true">RC</div>
+                <div>
+                  <cite>Rafael Costa</cite>
+                  <span>Cliente Engetronic</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <i class="fa-solid fa-quote-left testimonial-card__quote" aria-hidden="true"></i>
+              <p>"Orçamento claro, prazo cumprido e o carro voltou andando muito melhor do que eu esperava."</p>
+              <footer>
+                <div class="testimonial-card__avatar" aria-hidden="true">AF</div>
+                <div>
+                  <cite>Ana Ferreira</cite>
+                  <span>Cliente Engetronic</span>
+                </div>
+              </footer>
+            </blockquote>
+
+          </div>
+
+          <div class="testimonial-slider__dots" id="testimonialDots" role="tablist" aria-label="Selecionar depoimento"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARCAS ATENDIDAS
+    ============================================================= -->
+    <section class="brands">
+      <div class="container">
+        <p class="brands__label reveal">Marcas atendidas com precisão</p>
+        <div class="brands__marquee reveal">
+          <div class="brands__track">
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Chevrolet</span>
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Honda</span>
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Volkswagen</span>
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Citroën</span>
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Fiat</span>
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Hyundai</span>
+            <span class="brands__item"><i class="fa-solid fa-car"></i>Ford</span>
+            <!-- duplicado para loop contínuo -->
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Chevrolet</span>
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Honda</span>
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Volkswagen</span>
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Citroën</span>
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Fiat</span>
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Hyundai</span>
+            <span class="brands__item" aria-hidden="true"><i class="fa-solid fa-car"></i>Ford</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+    ============================================================= -->
+    <section class="faq" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Dúvidas frequentes</p>
+          <h2 class="section-title">Perguntas frequentes</h2>
+        </div>
+
+        <div class="accordion reveal" id="accordion">
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Quanto tempo leva um diagnóstico eletrônico?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="accordion__panel">
+              <p>Na maioria dos casos, o escaneamento inicial é feito em até 30 minutos. Problemas mais complexos podem exigir testes adicionais, mas você é informado do prazo antes de qualquer execução.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Vocês atendem todas as marcas de veículos?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="accordion__panel">
+              <p>Sim. Trabalhamos com Chevrolet, Honda, Volkswagen, Citroën, Fiat, Hyundai, Ford e outras marcas nacionais e importadas populares.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Como funciona a garantia dos serviços?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="accordion__panel">
+              <p>Todo serviço executado na Engetronic sai com garantia formal, com prazo e cobertura informados no momento da entrega do veículo.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Preciso agendar horário ou posso levar direto?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="accordion__panel">
+              <p>Recomendamos agendar pelo WhatsApp para garantir prioridade no diagnóstico, mas também recebemos veículos por ordem de chegada conforme disponibilidade.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>O orçamento tem algum custo?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="accordion__panel">
+              <p>O diagnóstico e o orçamento inicial não têm custo para a maior parte dos casos. Qualquer exceção é informada antes do início do procedimento.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>Vocês fornecem as peças ou eu levo as minhas?</span>
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+            <div class="accordion__panel">
+              <p>Trabalhamos com peças de procedência própria, mas também aceitamos peças fornecidas pelo cliente, mediante avaliação técnica prévia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA FINAL
+    ============================================================= -->
+    <section class="cta-final">
+      <div class="cta-final__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-final__inner reveal">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__dot" aria-hidden="true"></span>Agende agora</p>
+          <h2 class="cta-final__title">Seu veículo merece um diagnóstico de precisão.</h2>
+          <p class="cta-final__desc">Fale agora com a Engetronic pelo WhatsApp e receba um retorno rápido sobre o seu veículo.</p>
+          <a href="https://wa.me/5582981402200?text=Ol%C3%A1%2C%20Engetronic!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20para%20meu%20ve%C3%ADculo."
+             class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>Chamar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================= -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col footer__col--brand">
+          <a href="#home" class="navbar__brand">
+            <span class="navbar__mark" aria-hidden="true"><i class="fa-solid fa-bolt"></i></span>
+            <span class="navbar__name">ENGETRONIC</span>
+          </a>
+          <p class="footer__tagline">Engenharia de precisão para o seu motor. Diagnóstico eletrônico e mecânica especializada em Maceió/AL.</p>
+          <div class="footer__socials">
+            <a href="https://wa.me/5582981402200" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Contato</h3>
+          <ul class="footer__contact">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Lot. Canto do Mainá, Rua P, Nº 27 — Cidade Universitária, Maceió - AL</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <a href="https://wa.me/5582981402200" target="_blank" rel="noopener">(82) 98140-2200</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+5582981402200">(82) 98140-2200</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Horário de funcionamento</h3>
+          <ul class="footer__hours">
+            <li><span>Segunda a sexta</span><span>08h – 18h</span></li>
+            <li><span>Sábado</span><span>08h – 12h</span></li>
+            <li><span>Domingo</span><span>Fechado</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__map reveal">
+        <iframe
+          title="Localização da Engetronic no Google Maps"
+          src="https://www.google.com/maps?q=Lot.+Canto+do+Main%C3%A1,+Rua+P,+27,+Cidade+Universit%C3%A1ria,+Macei%C3%B3+-+AL&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Engetronic. Todos os direitos reservados.</p>
+        <p>Oficina mecânica em Maceió — Alagoas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÃO WHATSAPP FLUTUANTE
+  ============================================================= -->
+  <a href="https://wa.me/5582981402200?text=Ol%C3%A1%2C%20Engetronic!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20para%20meu%20ve%C3%ADculo."
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
