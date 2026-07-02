@@ -22,10 +22,12 @@
   --text-faint: #5f6b7a;
 
   /* Acentos */
-  --accent: #00e0ff;
-  --accent-rgb: 0, 224, 255;
-  --accent-2: #3d6bff;
-  --accent-2-rgb: 61, 107, 255;
+  --accent: #e6231c;
+  --accent-rgb: 230, 35, 28;
+  --accent-soft: #ff5b4d;
+  --accent-soft-rgb: 255, 91, 77;
+  --steel: #9a9a9e;
+  --steel-rgb: 154, 154, 158;
   --whatsapp: #25d366;
   --whatsapp-dark: #1da851;
 
@@ -235,7 +237,7 @@ section { position: relative; padding: 120px 0; }
   width: 34px; height: 34px;
   display: grid; place-items: center;
   border-radius: 9px;
-  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.18), rgba(var(--accent-2-rgb), 0.14));
+  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.18), rgba(var(--steel-rgb), 0.16));
   border: 1px solid rgba(var(--accent-rgb), 0.35);
   color: var(--accent);
   font-size: 15px;
@@ -299,7 +301,7 @@ section { position: relative; padding: 120px 0; }
   padding-top: var(--nav-h);
   overflow: hidden;
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(var(--accent-2-rgb), 0.16), transparent 60%),
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(var(--steel-rgb), 0.14), transparent 60%),
     var(--ink);
 }
 
@@ -329,7 +331,7 @@ section { position: relative; padding: 120px 0; }
 }
 .hero__glow--b {
   width: 380px; height: 380px;
-  background: radial-gradient(circle, rgba(var(--accent-2-rgb), 0.3), transparent 70%);
+  background: radial-gradient(circle, rgba(var(--steel-rgb), 0.28), transparent 70%);
   bottom: -100px; left: -60px;
   animation: floaty 14s ease-in-out infinite reverse;
 }
@@ -356,7 +358,7 @@ section { position: relative; padding: 120px 0; }
   color: var(--text);
 }
 .hero__title-accent {
-  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 100%);
+  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-soft) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -446,7 +448,7 @@ section { position: relative; padding: 120px 0; }
 
 .hud__ring--dashed {
   inset: 34px;
-  border: 1px dashed rgba(var(--accent-rgb), 0.35);
+  border: 1px dashed rgba(var(--steel-rgb), 0.45);
   animation: spin 40s linear infinite;
 }
 
@@ -656,7 +658,7 @@ section { position: relative; padding: 120px 0; }
   width: 46px; height: 46px;
   display: grid; place-items: center;
   border-radius: 10px;
-  background: rgba(var(--accent-2-rgb), 0.12);
+  background: rgba(var(--steel-rgb), 0.16);
   color: var(--accent);
   font-size: 18px;
   margin-bottom: 20px;
@@ -740,7 +742,7 @@ section { position: relative; padding: 120px 0; }
   width: 42px; height: 42px;
   border-radius: 50%;
   display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
   color: var(--ink);
   font-family: var(--font-mono);
   font-weight: 600;
